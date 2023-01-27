@@ -1,0 +1,22 @@
+{
+  "name": "actual-personal-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anitacheung83/Actual-Personal-Site.git"
+  },
+  "author": "Anita Cheung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anitacheung83/Actual-Personal-Site/issues"
+  },
+  "homepage": "https://github.com/anitacheung83/Actual-Personal-Site#readme",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
+}
