@@ -10,6 +10,9 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Fonts Awesome Icon insertion -->
     <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
     <!-- css stylesheet below -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- favicon below -->
@@ -22,17 +25,16 @@
 
     <!-- This part is the Navbar -->
     <div>
-
     </div>
-
 
     <!-- This part is the Heading -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-lg-6 heading">
+            <div class="col col-lg-6 heading justify-content-center">
                 <!-- add typing effect -->
-                <h4 class="auto-type">Hi, I am</h4>
+                <h4>Hi, My name is</h4>
                 <h1>Anita Cheung</h1>
+                <h4>I'm a <span class="auto-type"></span></h4>
             </div>
             <div class="col col-lg-6 photo1">
                 <img class="img-fluid float-end" src="images/IMG_6848.JPG" alt="Anita's photo">
@@ -41,16 +43,38 @@
 
     </div>
     <!-- This is About Me -->
-    <div class="aboutMe">
+    <div class="container-fluid aboutMe">
         <h3>About Me</h3>
-        <p> Lorem ipsum dolor sit amet. Sit veniam dolore id rerum voluptates eos provident consequatur vel placeat
-            doloribus qui natus assumenda et porro Quis et perferendis tempora. Ut reprehenderit quasi et aliquam
-            modi aut autem asperiores non voluptates nihil est atque dolor.</p>
+        <p> I am a full-stack developer with a diverse set of skills, including experience in frontend development,
+            databases, operating systems, Unity game development, and machine learning. I am a self-motivated and
+            dedicated professional who is passionate about using my technical abilities to create innovative and
+            efficient solutions. My ability to understand and adapt to new technologies quickly allows me to quickly
+            become a valuable asset to any team. </p>
     </div>
 
     <!-- This part is Projects -->
     <div class="container-fluid projects">
         <h3>My projects</h3>
+
+        <div class="row">
+            <div class="col col-md-5">
+
+            </div>
+            <div class="col col-md-7">
+                <h4>Airline Reservation System</h4>
+                <ul>
+                    <li>Sit provident aperiam eum vero nisi?</li>
+                    <li>Non corporis ipsum eum nulla ipsa ut quis vero?</li>
+                    <li>Est dolor praesentium aut maiores nobis.</li>
+                    <li>Qui porro ipsa nam enim omnis.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+
         <h4>Unity Game</h4>
         <ul>
             <li>Sit provident aperiam eum vero nisi?</li>
@@ -58,6 +82,8 @@
             <li>Est dolor praesentium aut maiores nobis.</li>
             <li>Qui porro ipsa nam enim omnis.</li>
         </ul>
+
+        <hr class="featurette-divider">
 
         <h4>Cosmos OS</h4>
         <ul>
@@ -68,6 +94,8 @@
             <li>Qui dolor quibusdam quo enim numquam.</li>
             <li>Qui nobis impedit ut blanditiis voluptas est reprehenderit obcaecati.</li>
         </ul>
+
+        <hr class="featurette-divider">
 
         <h4>AI projects</h4>
         <ul>
@@ -89,15 +117,6 @@
             <li>At quia dolores et molestiae internos et obcaecati voluptatem et nostrum voluptas.</li>
             <li>Hic distinctio quas est minima laboriosam.</li>
         </ul>
-        <h4>Research Assistance</h4>
-        <ul>
-            <li>Qui tenetur quasi sed porro quia est incidunt rerum.</li>
-            <li>Sit enim aspernatur id Quis consequatur ut libero quia quo doloribus voluptatem!</li>
-            <li>Quo deleniti laboriosam est voluptatem galisum ut cupiditate praesentium.</li>
-            <li>Id voluptas neque ut numquam alias et magni adipisci.</li>
-
-        </ul>
-
     </div>
 
     <!-- This part is the Skills -->
@@ -106,36 +125,45 @@
         <h4>Language</h4>
         <table>
             <tr>
+                <i class="fa fa-python fa-4x" aria-hidden="true"></i>
                 <td>Python</td>
-                <td>⭐️⭐️⭐️⭐️</td>
             </tr>
             <tr>
+                <i class="fa fa-java fa-4x" aria-hidden="true"></i>
                 <td>Java</td>
-                <td>⭐️⭐️⭐️</td>
             </tr>
             <tr>
                 <td>C</td>
-                <td>⭐️⭐️⭐️⭐️⭐️</td>
             </tr>
             <tr>
+                <i class="fa fa-csharp fa-4x" aria-hidden="true"></i>
                 <td>C #</td>
-                <td>⭐️⭐️</td>
-            </tr>
-            <tr>
-                <td>Unity Engine</td>
-                <td>⭐️⭐️</td>
             </tr>
             <tr>
                 <td>SQL</td>
-                <td>⭐️⭐️</td>
             </tr>
             <tr>
+                <i class="fa fa-html5 fa-4x" aria-hidden="true"></i>
+                <i class="fa fa-css3 fa-4x" aria-hidden="true"></i>
+                <i class="fa-brands fa-js fa-4x"></i>
+
                 <td>HTML, CSS, Javascript</td>
                 <td>⭐️⭐️⭐️⭐️</td>
             </tr>
         </table>
-        <h3>Frameworks</h3>
-        <h3>Tools</h3>
+        <h4>Frameworks</h4>
+        <i class="fa fa-postgresql fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-mysql fa-4x" aria-hidden="true"></i>
+
+        <h4>Tools</h4>
+        <i class="fa fa-unity fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-nodejs fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-react fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-bootstrap fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-tex fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-linux fa-4x" aria-hidden="true"></i>
+        <i class="fa fa-lock fa-4x" aria-hidden="true"></i>
     </div>
 
 
@@ -155,12 +183,14 @@
 
 
     </div>
-
+    <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- jquery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- typing effect script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
 </body>
 
