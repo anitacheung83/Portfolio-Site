@@ -16,7 +16,7 @@
     <!-- css stylesheet below -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- favicon below -->
-    <link rel="icon" href="android-chrome-512x512.png">
+    <link rel="icon" href="images/favicon.ico">
 
     <title>Yuk-Yung Anita Cheung</title>
 </head>
@@ -43,37 +43,44 @@
 
     </div>
     <!-- This is About Me -->
-    <div class="container-fluid aboutMe">
-        <h3>About Me</h3>
-        <p> I am a full-stack developer with a diverse set of skills, including experience in frontend development,
-            databases, operating systems, Unity game development, and machine learning. I am a self-motivated and
-            dedicated professional who is passionate about using my technical abilities to create innovative and
-            efficient solutions. My ability to understand and adapt to new technologies quickly allows me to quickly
-            become a valuable asset to any team. </p>
+    <div class=" container-fluid brown">
+        <div class="aboutMe">
+            <h3>About Me</h3>
+            <p> I am a full-stack developer with a diverse set of skills, including experience in frontend development,
+                backend development,
+                databases, operating systems, Unity game development, and machine learning. I am a self-motivated and
+                dedicated professional who is passionate about using my technical abilities to create innovative and
+                efficient solutions. My ability to understand and adapt to new technologies quickly allows me to quickly
+                become a valuable asset to any team. </p>
+        </div>
     </div>
+
+    <!-- <a href="posts/<%=post._id%>" value="<%=post._id%>">Read More</a> -->
 
     <!-- This part is Projects -->
     <div class="container-fluid projects">
         <h3>My projects</h3>
 
-        <div class="row">
-            <div class="col col-md-5">
 
-            </div>
-            <div class="col col-md-7">
-                <h4>Airline Reservation System</h4>
-                <ul>
-                    <li>Sit provident aperiam eum vero nisi?</li>
-                    <li>Non corporis ipsum eum nulla ipsa ut quis vero?</li>
-                    <li>Est dolor praesentium aut maiores nobis.</li>
-                    <li>Qui porro ipsa nam enim omnis.</li>
-                </ul>
-            </div>
+        <div id="air">
+            <a href="projects/airline-reservation-system">
+                <div class="row">
 
+                    <div class="col col-md-6 air-text">
+                        <h4>Airline Reservation System</h4>
+                        <ul>
+                            <li>Sit provident aperiam eum vero nisi?</li>
+                            <li>Non corporis ipsum eum nulla ipsa ut quis vero?</li>
+                            <li>Est dolor praesentium aut maiores nobis.</li>
+                            <li>Qui porro ipsa nam enim omnis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
         </div>
 
-        <hr class="featurette-divider">
 
+        <hr class="featurette-divider">
 
         <h4>Unity Game</h4>
         <ul>
@@ -122,48 +129,105 @@
     <!-- This part is the Skills -->
     <div class="container-fluid skills">
         <h3>Technical Skills</h3>
-        <h4>Language</h4>
-        <table>
-            <tr>
-                <i class="fa fa-python fa-4x" aria-hidden="true"></i>
-                <td>Python</td>
-            </tr>
-            <tr>
-                <i class="fa fa-java fa-4x" aria-hidden="true"></i>
-                <td>Java</td>
-            </tr>
-            <tr>
-                <td>C</td>
-            </tr>
-            <tr>
-                <i class="fa fa-csharp fa-4x" aria-hidden="true"></i>
-                <td>C #</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-            </tr>
-            <tr>
-                <i class="fa fa-html5 fa-4x" aria-hidden="true"></i>
-                <i class="fa fa-css3 fa-4x" aria-hidden="true"></i>
-                <i class="fa-brands fa-js fa-4x"></i>
 
-                <td>HTML, CSS, Javascript</td>
-                <td>⭐️⭐️⭐️⭐️</td>
-            </tr>
-        </table>
-        <h4>Frameworks</h4>
-        <i class="fa fa-postgresql fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-mysql fa-4x" aria-hidden="true"></i>
+        <div class="row">
+            <div class="col">
+                <h4>Frontend</h4>
+            </div>
+            <div class="col">
+                <table>
+                    <tr>
+                        <td> <i class="fa fa-html5 fa-4x" aria-hidden="true"></i> </td>
+                        <td><i class="fa fa-css3 fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa-brands fa-js fa-4x"></i></td>
+                        <td><i class="fa fa-bootstrap fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-react fa-4x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td>Javascript</td>
+                        <td>Bootstrap</td>
+                        <td>React</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 
-        <h4>Tools</h4>
-        <i class="fa fa-unity fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-github fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-nodejs fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-react fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-bootstrap fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-tex fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-linux fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-lock fa-4x" aria-hidden="true"></i>
+        <div class="row">
+            <div class="col">
+                <h4>Backend</h4>
+            </div>
+            <div class="col">
+                <table>
+                    <tr>
+                        <td><i class="fa fa-python fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-java fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-csharp fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-postgresql fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-mysql fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-nodejs fa-4x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Java</td>
+                        <td>C#</td>
+                        <td>postgresql</td>
+                        <td>MySQL</td>
+                        <td>NodeJS</td>
+
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>DevOps</h4>
+            </div>
+            <div class="col">
+                <table>
+                    <tr>
+                        <td><i class="fa fa-linux fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-lock fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-files-o fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-heroku fa-4x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Linux</td>
+                        <td>Cybersecurity</td>
+                        <td>File System</td>
+                        <td>Heroku</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>Others</h4>
+            </div>
+            <div class="col">
+                <table>
+                    <tr>
+                        <td><i class="fa fa-unity fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-tex fa-4x" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-github fa-4x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Unity Engine</td>
+                        <td>Latex</td>
+                        <td>GitHub</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
     </div>
 
 
