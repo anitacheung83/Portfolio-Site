@@ -57,7 +57,6 @@ table{
     
 }
 
-
 .temp {
     display: flex;
     flex-direction: column;
@@ -97,6 +96,7 @@ table{
 
 .aboutMe{
     background: #F8F4EC;
+    border-radius: 1%;
     width: 80%;
     height: auto;
     margin: 10px;
@@ -105,18 +105,21 @@ table{
 
 /******************* Projects div *********************/
 .projects{
-    padding: 8vh;
+    padding: 8vh 0 0 0;
 }
 
 .projects h4{
     text-align: center;
 }
 
+.projects-row{
+    margin-left: 8vh;
+    margin-right: 8vh;    
+    padding: 4vh 0;
+}
 
-/************** Airline Reservation System ************/
-
-.container-air{
-    background: #F8F4EC;
+.projects-container{
+    /* background: #F8F4EC; */
     padding: 12px;
     height: 80vh;
     display: flex;
@@ -126,21 +129,39 @@ table{
     align-items: center;
 }
 
-.air{
+.projects-info{
     background: #E6DDC6;
+    border-radius: 1%;
     height: auto;
     margin: 10px;
     padding: 8.5%;
 }
 
+.projects-0{
+    background: #F8F4EC;
+}
+
+.projects-1{
+    background: #C2B8A3;
+}
+
 
 /******************* Technical Skills ********************/
-table{
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    
+.skills-container{
+    display: "flex";
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: "center";
+    align-items: "center";
 }
+
+.skills{
+    height: auto;
+    /* margin: 10px; */
+    padding-top: 5%;
+    /* padding: 8.5%; */
+}
+
 
 /******************* Class Selector ********************/
 
