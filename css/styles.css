@@ -198,4 +198,12 @@ table{
 }
 
 
+@media screen and (max-width: 600px) {
+    .projects-row {
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+}
+    
+
 
