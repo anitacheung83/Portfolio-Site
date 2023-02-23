@@ -50,6 +50,14 @@ img{
     max-width: 100%;
 }
 
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+
 .temp {
     display: flex;
     flex-direction: column;
@@ -126,6 +134,13 @@ img{
 }
 
 
+/******************* Technical Skills ********************/
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
 
 /******************* Class Selector ********************/
 
