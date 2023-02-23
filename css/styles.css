@@ -23,6 +23,11 @@
 
 body{
     background-color: #F8F4EC;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h3, h4{
+    font-family: 'DM Serif Display', serif;
 }
 
 h1{
@@ -86,10 +91,12 @@ table{
     padding-top: 22%; */
     /* padding-bottom: 25%; */
     min-height: 80vh;
+    
 }
 
 .heading-intro{
-    min-height: 80vh;
+    width: 290px;
+    overflow: hidden;
 }
 
 .photo1{
@@ -199,6 +206,9 @@ table{
 
 
 @media screen and (max-width: 600px) {
+    .heading-intro{
+        width: 249px;
+    }
     .aboutMe{
         margin: 0;
         width: 98%;
