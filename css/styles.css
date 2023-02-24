@@ -250,7 +250,7 @@ table{
         margin: 0;
         width: 98%;
     }
-    .projects-row {
+    .projects-row{
         margin: 0 2vh;
         padding: 4vh 0; 
     }
@@ -261,6 +261,16 @@ table{
     .projects-container{
         min-height: 40vh;
         padding: 12px 0 0 0;
+    }
+
+    .experience{
+        margin: 0;
+        padding: 0;
+    }
+
+    .experience .row{
+        margin: 6vh 2vh;
+        padding: 4vh;
     }
 
     .temp{
@@ -275,8 +285,14 @@ table{
         font-size: small;
     }
 
+
     .skills{
-        padding: 4%;
+        padding: 0;
+    }
+
+    .skills .row{
+        margin: 0 2vh;
+        padding: 2vh;
     }
 
     .skills h4{
