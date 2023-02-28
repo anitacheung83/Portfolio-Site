@@ -121,6 +121,7 @@ table{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 10% 2%;
 }
 
 
@@ -306,6 +307,9 @@ table{
     .skills{
         padding: 0;
     }
+    .skills-container{
+        justify-content: center;
+    }
 
     .skills .row{
         margin: 0 2vh;
@@ -314,7 +318,6 @@ table{
 
     .skills h4{
         text-align: center;
-        justify-content: center;
     }
 }
     
