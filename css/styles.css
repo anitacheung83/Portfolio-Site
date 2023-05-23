@@ -1,51 +1,32 @@
-/*     
-    width:100%;
-    height: 300px;
-    border: solid;
-    border-width: 50px;
-    border-top: 0px;
-    border-width: 0px, 10px, 16px, 20px;
-    padding: 20px;
-    margin:10 px; //buffer zone
-    position: relative, absolute, static, fixed
-    top:
-    right:
-    font-size: // 100% = 16px = 1em
-
-
-    About me page
-}
-
-
-*/
-
 /******************* Element Selector ******************/
 
-body{
+body {
     background-color: #F8F4EC;
     font-family: 'Quicksand', sans-serif;
 }
 
-h1, h3, h4{
+h1,
+h3,
+h4 {
     font-family: 'DM Serif Display', serif;
 }
 
-h1{
+h1 {
     display: inline;
     font-size: 4rem;
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 2rem;
     padding: 2rem 0;
 }
 
-h4{
+h4 {
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -54,22 +35,29 @@ a:hover {
     color: black;
 }
 
-a:active{
-    color:#A19882;
+a:active {
+    color: #A19882;
 }
 
-img{
+video,
+img {
     max-width: 100%;
 }
 
-table{
+table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    
+
 }
 
-.temp {
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,55 +65,81 @@ table{
     padding: 20px;
 }
 
-.row>*{
+.row>* {
     padding: 0;
 }
 
 /********************* Heading ***********************/
 
-.heading-col{
-    /* position: fixed; */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 50%; */
-    /* padding-left: 16%;
-    padding-right: 14%;
-    padding-top: 22%; */
-    /* padding-bottom: 25%; */
+.heading-col {
     min-height: 80vh;
-    
 }
 
-.heading-intro{
+.heading-intro {
     width: 360px;
     overflow: hidden;
 }
 
-.heading-intro h3{
+.heading-intro h3 {
     text-align: justify;
 }
 
-.photo1{
+.photo1 {
     padding-right: 0px;
+}
+
+/******************* Nav Bar ***********************/
+.navbar-s {
+    list-style-type: none;
+    background-color: #C2B8A3;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: sticky;
+}
+
+.nav-item-s a {
+    font-family: 'DM Serif Display', serif;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.nav-item-right {
+    float: right;
+    margin-top: 4px;
+}
+
+.nav-item-right a {
+    font-size: larger;
+}
+
+.nav-item-left {
+    float: left;
+}
+
+.nav-item-left img {
+    padding-right: 4px;
+}
+
+.nav-item-left a {
+    font-size: x-large;
 }
 
 /******************* About Me **********************/
 
-.container-aboutMe{
+.container-aboutMe {
     background: #C2B8A3;
     width: 100%;
     min-height: 80vh;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     padding: 10% 2%;
 }
 
-
-.aboutMe{
+.aboutMe {
     background: #F8F4EC;
     border-radius: 1%;
     width: 80%;
@@ -134,36 +148,33 @@ table{
     padding: 6%;
 }
 
-.aboutMe h3{
+.aboutMe h3 {
     padding: 0 0 2rem 0;
 }
 
 /******************* Projects div *********************/
-.projects{
+.projects {
     padding: 8vh 0 0 0;
 }
 
-.projects h4{
+.projects h4 {
     text-align: center;
 }
 
-.projects-row{
+.projects-row {
     margin-left: 8vh;
-    margin-right: 8vh;    
+    margin-right: 8vh;
 }
 
-.projects-container{
+.projects-container {
     /* background: #F8F4EC; */
     padding: 12px;
     min-height: 80vh;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
-.projects-info{
+.projects-info {
     background: #E6DDC6;
     border-radius: 1%;
     height: auto;
@@ -171,155 +182,142 @@ table{
     padding: 8.5% 8.5% 4% 8.5%;
 }
 
-.projects-0{
+.projects-0 {
     background: #F8F4EC;
 }
 
-.projects-1{
+.projects-1 {
     background: #C2B8A3;
 }
 
-.projects-p{
+.projects-p {
     padding: 19px 0;
 }
 
 
 /******************* Technical Skills ********************/
-.skills-container{
+.skills-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
     align-items: center;
-    
+
 }
 
-.skills h3{
+.skills h3 {
     padding: 2rem 0;
 }
 
-.skills h4{
+.skills h4 {
     height: auto;
-    /* margin: 10px; */
     padding: 5% 10%;
-    /* padding: 8.5%; */
 }
 
-.skills .row{
+.skills .row {
     background: #E6DDC6;
     border-radius: 1%;
     padding: 1rem 4rem;
-    /* margin: 4rem 0; */
-
-    /* background: #E6DDC6;
-    /* border-radius: 1%; */
-    /* padding: 4rem; */ 
 }
-
 
 /******************* Experiences ********************/
 
 
-.experience{
+.experience {
     position: relative;
     top: 2rem;
 }
 
-.experience .row{
+.experience .row {
     background: #C2B8A3;
     border-radius: 1%;
     padding: 4rem;
     margin: 4rem 0;
 }
 
-
-
-.experience, .skills, .education, .contactMe{
+.experience,
+.skills,
+.education,
+.contactMe {
     padding-left: 10%;
     padding-right: 10%;
 }
 
 /******************* Education ********************/
 
-.education .row, .contactMe{
-    display: flex;
+.education .row,
+.contactMe {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
-.education .col-sm-6{
+.education .col-sm-6 {
     background-color: #C2B8A3;
     border-radius: 1%;
     padding: 2rem;
     margin-bottom: 4rem;
 }
 
-.contactMe{
+.contactMe {
     margin: 0;
 }
-
-
-
 
 @media screen and (max-width: 600px) {
     h4 {
         font-size: 1.8rem;
     }
 
-    .aboutMe{
+    .aboutMe {
         margin: 0;
         width: 98%;
     }
-    .projects-row{
+
+    .projects-row {
         margin: 0 2vh;
-        padding: 4vh 0; 
+        padding: 4vh 0;
     }
-    .projects-info{
+
+    .projects-info {
         margin: 4vh 0;
     }
 
-    .projects-container{
+    .projects-container {
         min-height: 40vh;
         padding: 12px 0 0 0;
     }
 
-    .experience{
+    .experience {
         margin: 0;
         padding: 0;
     }
 
-    .experience .row{
+    .experience .row {
         margin: 6vh 2vh;
         padding: 4vh;
     }
 
-    .temp{
+    .temp {
         padding: 1%;
     }
 
-    .icon-text{
+    .icon-text {
         font-size: x-small;
     }
 
 
-    .skills{
+    .skills {
         padding: 0;
     }
-    .skills-container{
+
+    .skills-container {
         justify-content: center;
     }
 
-    .skills .row{
+    .skills .row {
         margin: 0 2vh;
         padding: 2vh;
     }
 
-    .skills h4{
+    .skills h4 {
         text-align: center;
     }
 }
-    
-
-

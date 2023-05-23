@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand&display=swap"
         rel="stylesheet">
-    <!-- Fonts Awesome Icon insertion -->
+    <!-- Fonts Awesome icon outer insertion -->
     <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
         integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
@@ -22,7 +22,7 @@
 
     <!-- css stylesheet below -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- favicon below -->
+    <!-- favicon outer below -->
     <link rel="icon" href="images/favicon.ico?">
 
     <title>Yuk-Yung Anita Cheung</title>
@@ -45,11 +45,21 @@
             </div>
         </div>
     </div> -->
+    <div>
+        <ul class="navbar-s">
+            <li class="nav-item-s nav-item-left"><a href="#"><img src="/images/android-chrome-512x512.png" width="30">
+                    Portfolio</a></li>
+            <li class="nav-item-s nav-item-right"><a href="#contact">Contact</a></li>
+            <li class="nav-item-s nav-item-right"><a href="#projects">Projects</a></li>
+            <li class="nav-item-s nav-item-right"><a href="#aboutMe">About</a></li>
+            <li class="nav-item-s nav-item-right"><a href="#">Home</a></li>
+        </ul>
+    </div>
 
 
-    <div class="heading container-fluid">
-        <div class="row" style="padding: 0;">
-            <div class="col-sm-6 heading-col">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 outer heading-col">
                 <!-- add typing effect -->
                 <div class="heading-intro">
                     <h3>Hi, My name is</h3>
@@ -68,7 +78,7 @@
 
     </div>
     <!-- This is About Me -->
-    <div class=" container-fluid container-aboutMe">
+    <div class=" container-fluid container-aboutMe outer" id="aboutMe">
         <div class="aboutMe">
             <h3>About Me</h3>
             <p> I am a full-stack developer with experience in frontend and backend development, databases, and
@@ -89,11 +99,11 @@
     <!-- <a href="posts/<%=post._id%>" value="<%=post._id%>">Read More</a> -->
 
     <!-- This part is Projects -->
-    <div class="container-fluid projects">
+    <div class="container-fluid projects" id="projects">
         <h3>My projects</h3>
         <div class="projects-div">
             <div class="row projects-row">
-                <div class="col-sm-6 col-md-6 projects-container projects-0">
+                <div class="col-sm-6 col-md-6 projects-container outer projects-0">
                     <div class="projects-info">
                         <a href="https://github.com/anitacheung83/airline-reservation-system">
                             <h4>Airline Reservation System</h4>
@@ -117,28 +127,28 @@
                         <table>
                             <tr>
                                 <td>
-                                    <div class="temp"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">HTML</span>
+                                    <div class="icon outer"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i><span
+                                            class="icon outer-text">HTML</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="temp"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">CSS</span>
+                                    <div class="icon outer"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i><span
+                                            class="icon outer-text">CSS</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="temp"><i class="fa-brands fa-js fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">Javascript</span>
+                                    <div class="icon outer"><i class="fa-brands fa-js fa-2x"
+                                            aria-hidden="true"></i><span class="icon outer-text">Javascript</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="temp"><i class="fa fa-nodejs fa-2x" aria-hidden="true"></i></i><span
-                                            class="icon-text">NodeJS</span>
+                                    <div class="icon outer"><i class="fa fa-nodejs fa-2x"
+                                            aria-hidden="true"></i></i><span class="icon outer-text">NodeJS</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="temp"><i class="fa fa-react fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">React</span>
+                                    <div class="icon outer"><i class="fa fa-react fa-2x" aria-hidden="true"></i><span
+                                            class="icon outer-text">React</span>
                                     </div>
                                 </td>
                             </tr>
@@ -146,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 projects-container projects-0">
+                <div class="col-sm-6 col-md-6 projects-container projects-0 outer">
                     <div>
                         <img src="images/airline-reservation.jpg" alt="">
                     </div>
@@ -163,16 +173,17 @@
         <div class="projects-div projects-1">
 
             <div class="row projects-row projects-1">
-                <div class="col-sm-6 projects-container projects-1">
+                <div class="col-sm-6 projects-container projects-1 outer">
                     <div>
-                        <img src="images/portfolio-site.png" alt="">
+                        <video autoplay loop muted src="images/league-demo.mp4"></video>
+                        <!-- <img src="images/slash-command.png" alt="" height="600"> -->
                     </div>
 
                 </div>
-                <div class="col-sm-6 projects-container projects-1">
+                <div class="col-sm-6 projects-container projects-1 outer">
                     <div class="projects-info">
-                        <a href="projects/airline-reservation-system">
-                            <h4>Real Time Statistic Bot</h4>
+                        <a href="league.html">
+                            <h4>League Report Bot</h4>
                         </a>
                         <p class="projects-p">The notification system is designed to provide real-time updates for the
                             League of Legends gameplay statistics. The system is built with Python and integrates with
@@ -195,8 +206,8 @@
                         <table>
                             <tr>
                                 <td>
-                                    <div class="temp"><i class="fa fa-python fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">Python</span>
+                                    <div class="icon outer"><i class="fa fa-python fa-2x" aria-hidden="true"></i><span
+                                            class="icon outer-text">Python</span>
                                     </div>
                                 </td>
 
@@ -214,7 +225,7 @@
 
             <div class="row projects-row">
 
-                <div class="col-sm-6 projects-container">
+                <div class="col-sm-6 projects-container outer">
                     <div class="projects-info">
                         <a href="projects/airline-reservation-system">
                             <h4>Automatic Puzzle Solver</h4>
@@ -239,8 +250,8 @@
                         <table>
                             <tr>
                                 <td>
-                                    <div class="temp"><i class="fa fa-python fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">Python</span>
+                                    <div class="icon outer"><i class="fa fa-python fa-2x" aria-hidden="true"></i><span
+                                            class="icon outer-text">Python</span>
                                     </div>
                                 </td>
 
@@ -248,7 +259,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-sm-6 projects-container">
+                <div class="col-sm-6 projects-container outer">
                     <div>
                         <img src="images/automatic-solver.png" alt="">
                     </div>
@@ -261,15 +272,15 @@
 
         <div class="projects-div projects-1">
             <div class="row projects-row projects-1">
-                <div class="col-sm-6 projects-container projects-1">
+                <div class="col-sm-6 projects-container projects-1 outer">
                     <div>
                         <img src="images/portfolio-site.png" alt="">
                     </div>
 
                 </div>
-                <div class="col-sm-6 projects-container projects-1">
+                <div class="col-sm-6 projects-container projects-1 outer">
                     <div class="projects-info">
-                        <a href="projects/airline-reservation-system">
+                        <a href="https://github.com/anitacheung83/Portfolio-Site">
 
                             <h4>Portfolio Site</h4>
                         </a>
@@ -287,23 +298,23 @@
                         <table>
                             <tr>
                                 <td>
-                                    <div class="temp"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">HTML</span>
+                                    <div class="icon outer"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i><span
+                                            class="icon outer-text">HTML</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="temp"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">CSS</span>
+                                    <div class="icon outer"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i><span
+                                            class="icon outer-text">CSS</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="temp"><i class="fa-brands fa-js fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">Javascript</span>
+                                    <div class="icon outer"><i class="fa-brands fa-js fa-2x"
+                                            aria-hidden="true"></i><span class="icon outer-text">Javascript</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="temp"><i class="fa fa-bootstrap fa-2x" aria-hidden="true"></i><span
-                                            class="icon-text">Bootstrap</span>
+                                    <div class="icon outer"><i class="fa fa-bootstrap fa-2x"
+                                            aria-hidden="true"></i><span class="icon outer-text">Bootstrap</span>
                                     </div>
                                 </td>
 
@@ -387,33 +398,33 @@
                 <table>
                     <tr>
                         <td>
-                            <div class="temp"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">HTML</span>
+                            <div class="icon outer"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">HTML</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">CSS</span>
+                            <div class="icon outer"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">CSS</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa-brands fa-js fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Javascript</span>
+                            <div class="icon outer"><i class="fa-brands fa-js fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Javascript</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-bootstrap fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Bootstrap</span>
+                            <div class="icon outer"><i class="fa fa-bootstrap fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Bootstrap</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-react fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">React</span>
+                            <div class="icon outer"><i class="fa fa-react fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">React</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa-brands fa-vuejs fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Vue.js</span>
+                            <div class="icon outer"><i class="fa-brands fa-vuejs fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Vue.js</span>
                             </div>
                         </td>
                     </tr>
@@ -433,33 +444,33 @@
                 <table>
                     <tr>
                         <td>
-                            <div class="temp"><i class="fa fa-python fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Python</span>
+                            <div class="icon outer"><i class="fa fa-python fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Python</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-java fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Java</span>
+                            <div class="icon outer"><i class="fa fa-java fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Java</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-c fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">C</span>
+                            <div class="icon outer"><i class="fa fa-c fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">C</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-postgresql fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">progresSQL</span>
+                            <div class="icon outer"><i class="fa fa-postgresql fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">progresSQL</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-mysql fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">mySQL</span>
+                            <div class="icon outer"><i class="fa fa-mysql fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">mySQL</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-nodejs fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">NodeJS</span>
+                            <div class="icon outer"><i class="fa fa-nodejs fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">NodeJS</span>
                             </div>
                         </td>
                     </tr>
@@ -477,33 +488,33 @@
                 <table>
                     <tr>
                         <td>
-                            <div class="temp"><i class="fa fa-linux fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Linux</span>
+                            <div class="icon outer"><i class="fa fa-linux fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Linux</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-heroku fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Heroku</span>
+                            <div class="icon outer"><i class="fa fa-heroku fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Heroku</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa-brands fa-git-alt fa-2x" aria-hidden="true"></i><spanon-text
-                                    class="icon-text">Git</span>
+                            <div class="icon outer"><i class="fa-brands fa-git-alt fa-2x"
+                                    aria-hidden="true"></i><spanon-text class="icon outer-text">Git</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa-brands fa-docker fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Docker</span>
+                            <div class="icon outer"><i class="fa-brands fa-docker fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Docker</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa-brands fa-aws fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">AWS(EC2)</span>
+                            <div class="icon outer"><i class="fa-brands fa-aws fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">AWS(EC2)</span>
                             </div>
                         </td>
                         <td>
-                            <div class="temp"><i class="fa fa-lock fa-2x" aria-hidden="true"></i><span
-                                    class="icon-text">Security</span>
+                            <div class="icon outer"><i class="fa fa-lock fa-2x" aria-hidden="true"></i><span
+                                    class="icon outer-text">Security</span>
                             </div>
                         </td>
                     </tr>
@@ -520,18 +531,18 @@
 
     <div class="container-fluid education">
         <h3>My Education</h3>
-        <div class="row">
+        <div class="row outer">
             <div class="col-sm-6">
                 <h4>University of Toronto</h4>
                 <p>Major in Computer Science, Bachelors</p>
-                <p>2020 - Current</p>
+                <p>2023</p>
             </div>
         </div>
     </div>
 
 
     <hr>
-    <div class="container-fluid contactMe">
+    <div class="container-fluid contactMe outer" id="contact">
         <a class="btn" href="mailto:anitacheung83@hotmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a>
         <a class="btn" href="https://github.com/anitacheung83"><i class="fa-brands fa-github fa-2x"></i></a>
         <a class="btn" href=""><i class="fa fa-file-text fa-2x" aria-hidden="true"></i></a>
