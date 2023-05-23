@@ -1,0 +1,91 @@
+/****************** Element Selector ******************/
+
+body {
+    background-color: #F8F4EC;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: #A19882;
+}
+
+img {
+    margin: 4px;
+}
+
+
+
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************* Nav Bar ***********************/
+.navbar-s {
+    list-style-type: none;
+    background-color: #C2B8A3;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: sticky;
+}
+
+.nav-item-s a {
+    font-family: 'DM Serif Display', serif;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.nav-item-right {
+    float: right;
+    margin-top: 4px;
+}
+
+.nav-item-right a {
+    font-size: larger;
+}
+
+.nav-item-left {
+    float: left;
+}
+
+.nav-item-left img {
+    padding-right: 4px;
+}
+
+.nav-item-left a {
+    font-size: x-large;
+}
+
+/******************* Title *********************/
+.highlight {
+    background: linear-gradient(120deg, #C2B8A3 0%, #E6DDC6 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 90%;
+}

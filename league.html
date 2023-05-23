@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link below -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Google font below -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <!-- css stylesheet below -->
+    <link rel="stylesheet" href="css/league.css">
+    <!-- favicon outer below -->
+    <link rel="icon" href="images/favicon.ico?">
+    <title>League Statistic Bot</title>
+</head>
+
+<body>
+    <div>
+        <ul class="navbar-s">
+            <li class="nav-item-s nav-item-left"><a href="#"><img src="/images/android-chrome-512x512.png" width="30">
+                    Project: League Statistic Bot</a></li>
+            <li class="nav-item-s nav-item-right"><a href="#">Contact</a></li>
+            <li class="nav-item-s nav-item-right"><a href="#">Projects</a></li>
+            <li class="nav-item-s nav-item-right"><a href="#">About</a></li>
+            <li class="nav-item-s nav-item-right"><a href="/index.html">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1><span class="highlight">League Statistic Bot</span></h1>
+
+
+        <div class="row outer">
+            <div class="col-sm-8">
+                <h2>Preface</h2>
+                <p>Initially, I developed the League Statistic Bot with the intention to improve communication with
+                    my
+                    boyfriend. One of the challenges we face was the timing of my calls, particularly when my
+                    boyfriend was
+                    engrossed in a game of League of Legend. Understandably, interrupting him during those moments
+                    would
+                    lead to
+                    frustration, and he humorously referred to himself as being "at war" in the game. Thus, I sought
+                    a
+                    solution
+                    that would allow me to determine if he was currently playing League. By implementing the League
+                    Statistic
+                    Bot, I can now ascertain whether my boyfriend is playing League or not. Which enables me to wait
+                    until
+                    after
+                    his game to reach out, ensuring our conversations are more enjoyable and uninterrupted.</p>
+                <h3>Further Application</h3>
+                <p>League Statistic Bot has become a helpful tool for my family, especially when it comes to my
+                    younger
+                    brother's gaming habits. He struggles with self-control and to manage his gaming time
+                    effectively. So,
+                    my
+                    parents started using the bot to keep track of his playtime and help him with time management.
+                    It's made
+                    a
+                    significant difference in his academic performance. With the bot's support, my parents can
+                    better guide
+                    him
+                    and find a balance between gaming and his studies. It's been a positive intervention that's
+                    created a
+                    more
+                    supportive environment for his growth and success.</p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="images/slash-command.png" alt="slash command" height="600">
+            </div>
+        </div>
+
+
+        <div>
+            <h2>Description</h2>
+
+            <p>The League Statistic Bot is a Discord bot designed to fetch League of Legend game data using the Riot
+                Games
+                API. It utilizes Discord's slash commands feature to provide users with convenient ways to track
+                summoner's
+                games.</p>
+
+            <p>Users can check if a summoner is currently playing League of Legends by using the /active slash command.
+            </p>
+
+            <div class="outer">
+                <img src="images/league-bot-past.png" alt="past slash command" height="600">
+            </div>
+
+            <p>Moreover, users can request the data for the summoner's past 10 games by using /past slash command.</p>
+
+            <div class="outer">
+                <img src="images/league-bot-past.png" alt="past slash command" height="600">
+            </div>
+
+            <p>Additionally, the bot generates two graphs thorugh matplotlib. The first graph displays the total time
+                played
+                by the summoner
+                during the last week, allowing users to visualize their gaming activity over time. The second graph
+                shows
+                the total number of games played by the summoner during last week, providing insights into their gaming
+                frequency.</p>
+
+            <div class="outer">
+                <img src="images/total_time_played_graph.png" alt="graph" height="400">
+                <img src="images/games_played_graph.png" alt="graph" height="400">
+            </div>
+            <p>Lastly, the bot generates a comprehensive weekly report that includes a list of games played by the
+                summoner
+                during the previous week and total time played graph and number of games played graph.</p>
+        </div>
+
+        <div>
+            <h2>Modules/Library Used</h2>
+            <p>Discord.py is used for receiving and responding user’s requests.
+                <br />
+                Matplotlib is used to generate graph from summoner’s game data.
+                <br />
+                Datetime is used for working with dates and times.
+            </p>
+        </div>
+
+        <div>
+            <h2>Architecture Diagram</h2>
+            <iframe src="league-statistic-bot-architecture-diagram.html" width="1200" height="700"
+                frameborder="0"></iframe>
+        </div>
+
+        <div>
+            <h2>Testing: PyTest</h2>
+            <h3>riot_requests_test</h3>
+            <p></p>
+            <h3>discord_bot_test</h3>
+            <p></p>
+        </div>
+
+        <div>
+            <h2>Hosting</h2>
+            <p>
+                Originally, the bot was hosted on Heroku, but recently they started charging $7 per month for command
+                line
+                access. Fortunately, I received a generous gift from my dad in the form of a Raspberry Pi. Now, the bot
+                is
+                hosted on my Raspberry Pi, allowing me to run it for free.
+            </p>
+        </div>
+
+        <div>
+            <h2>What I've Learned</h2>
+        </div>
+
+        <div>
+            <h2>Upcoming</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
