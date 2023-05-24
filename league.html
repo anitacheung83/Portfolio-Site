@@ -33,7 +33,7 @@
     </div>
 
     <div class="container">
-        <h1><span class="highlight">League Statistic Bot</span></h1>
+        <h1><span class="highlight">League Statistic Discord Bot</span></h1>
 
 
         <div class="row outer">
@@ -55,7 +55,7 @@
                     until
                     after
                     his game to reach out, ensuring our conversations are more enjoyable and uninterrupted.</p>
-                <h3>Further Application</h3>
+                <h4>Further Application</h4>
                 <p>League Statistic Bot has become a helpful tool for my family, especially when it comes to my
                     younger
                     brother's gaming habits. He struggles with self-control and to manage his gaming time
@@ -118,26 +118,95 @@
                 during the previous week and total time played graph and number of games played graph.</p>
         </div>
 
+        <h2>Code:</h2>
+        <p class="inline-code">The code consisted of 3 main components,
+        <pre class="inline-code">discord_bot.py</pre>,
+        <pre class="inline-code">riot_requests.py"</pre> and and other classes (including.
+        <pre class="inline-code">summoner.py</pre>,
+        <pre class="inline-code">team.py</pre>,
+        <pre class="inline-code">match.py</pre>).
+        </p>
         <div>
-            <h2>Modules/Library Used</h2>
-            <p>Discord.py is used for receiving and responding user’s requests.
-                <br />
-                Matplotlib is used to generate graph from summoner’s game data.
-                <br />
-                Datetime is used for working with dates and times.
-            </p>
+            <h4>
+                <pre>discord_bot.py</pre>
+            </h4>
+
+            <p>‘discord_bot.py’ handles user requests and sending corresponding respond to user. The discord.py library
+                is used to aid in creating applications that utilize the Discord API. By utilizing
+                ‘client.tree.command’, we can create slash commands that users can use on Discord. Each command invokes
+                a function in ‘responses.py’, which, in turn, calls the corresponding function in ‘riot_requests.py’,
+                that fetch the required data from riot api.</p>
+
+            <pre>
+    @client.tree.command(name="active")
+    @app_commands.describe(summoner_name="Summoner Name")
+    async def active(interaction: discord.Interaction, summoner_name: str) -> None:
+        """
+        Sends a message to the user with the active game of the summoner
+
+        Args:
+            interaction (discord.Interaction): The Discord interaction object representing the original message
+            summoner_name (str): The summoner name
+
+        Returns:
+            None
+        """
+        active_game = responses.active(summoner_name)
+        await interaction.response.send_message(active_game)
+            </pre>
         </div>
 
         <div>
-            <h2>Architecture Diagram</h2>
+            <h4>
+                <pre>riot_requests.py</pre>
+            </h4>
+        </div>
+
+        <div>
+            <h4>Other classes</h4>
+            <h6>Architecture Diagram:</h6>
             <iframe src="league-statistic-bot-architecture-diagram.html" width="1200" height="700"
                 frameborder="0"></iframe>
         </div>
 
+
+        <div>
+
+        </div>
+
+
+
         <div>
             <h2>Testing: PyTest</h2>
             <h3>riot_requests_test</h3>
-            <p></p>
+            <p>The "riot_requests_test" suite validates the functionality of Riot API calls in an ever-changing API
+                environment. Using pytest.fixture, the tests are set up with mock API responses from JSON files. By
+                utilizing with patch("requests.get"), the actual requests.get function is replaced with a mock response.
+                This approach ensures that the code correctly interacts with the Riot API, accommodating potential API
+                changes. The mock responses create a stable testing environment where the application's behavior can be
+                verified against expected outcomes. Through these tests, the reliability of Riot API integration is
+                maintained, promptly identifying and resolving any issues. The ultimate goal is to deliver a robust
+                application that seamlessly interacts with the evolving Riot API, ensuring a consistent and dependable
+                user experience.</p>
+            <pre>
+            @pytest.fixture
+            def mock_get_summoners_by_name_sucess():
+                with open("test/mock_get_summoners_by_name_success.json") as f:
+                    return json.load(f)
+    
+    
+            def test_get_summoners_by_name_success(mock_get_summoners_by_name_sucess):
+                """
+                Test get_summoners_by_name() with a valid summoner name.
+                """
+    
+                summoner_name = "Kid Orpheus"
+                with patch("requests.get") as mock_get:
+                    mock_get.return_value.json.return_value = mock_get_summoners_by_name_sucess
+                    summoner = get_summoners_by_name(summoner_name)
+    
+                assert expected_summoner == summoner
+            </pre>
             <h3>discord_bot_test</h3>
             <p></p>
         </div>
