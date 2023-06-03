@@ -33,7 +33,7 @@
     </div>
 
     <div class="container">
-        <h1><span class="highlight">League Statistic Discord Bot</span></h1>
+        <h1><span class="highlight-title">League Statistic Discord Bot</span></h1>
 
 
         <div class="row outer">
@@ -42,24 +42,20 @@
                 <p>Initially, I developed the League Statistic Bot with the intention to improve communication with
                     my
                     boyfriend. One of the challenges we face was the timing of my calls, particularly when my
-                    boyfriend was
-                    engrossed in a game of League of Legend. Understandably, interrupting him during those moments
-                    would
-                    lead to
-                    frustration, and he humorously referred to himself as being "at war" in the game. Thus, I sought
-                    a
-                    solution
-                    that would allow me to determine if he was currently playing League. By implementing the League
-                    Statistic
-                    Bot, I can now ascertain whether my boyfriend is playing League or not. Which enables me to wait
-                    until
-                    after
-                    his game to reach out, ensuring our conversations are more enjoyable and uninterrupted.</p>
+                    boyfriend was in a game of League of Legend. Understandably, interrupting him during those moments
+                    would lead to frustration, and he humorously jokes that I shouldn't call him when he is "at war".
+                    Thus, I sought
+                    a solution that would allow me to determine if he was currently playing League. By implementing the
+                    League
+                    Statistic Bot, I can now know if my boyfriend is playing League at the moment. Which enables me to
+                    wait
+                    until after his game to reach out, ensuring our conversations are more enjoyable and uninterrupted.
+                </p>
                 <h4>Further Application</h4>
-                <p>League Statistic Bot has become a helpful tool for my family, especially when it comes to my
+                <p>League Statistic Bot has also become a helpful tool for my family, especially when it comes to my
                     younger
                     brother's gaming habits. He struggles with self-control and to manage his gaming time
-                    effectively. So,
+                    properly. So,
                     my
                     parents started using the bot to keep track of his playtime and help him with time management.
                     It's made
@@ -82,31 +78,35 @@
         <div>
             <h2>Description</h2>
 
-            <p>The League Statistic Bot is a Discord bot designed to fetch League of Legend game data using the Riot
-                Games
-                API. It utilizes Discord's slash commands feature to provide users with convenient ways to track
+            <p>The League Statistic Bot is a Discord bot designed to fetch League of Legend game data using the
+                <a class="inline" href="https://developer.riotgames.com/apis"> Riot Games API.</a>
+                It utilizes Discord's slash commands feature to provide users with convenient ways to track
                 summoner's
-                games.</p>
+                games.
+            </p>
 
-            <p>Users can check if a summoner is currently playing League of Legends by using the /active slash command.
+            <p>Users can check if a summoner is currently playing League of Legends by using the <span
+                    class="slash">/active</span> slash command.
             </p>
 
             <div class="outer">
                 <img src="images/league-bot-past.png" alt="past slash command" height="600">
             </div>
 
-            <p>Moreover, users can request the data for the summoner's past 10 games by using /past slash command.</p>
+            <p>Moreover, users can request the data for the summoner's past 10 games by using <span
+                    class="slash">/past</span> slash command.</p>
 
             <div class="outer">
                 <img src="images/league-bot-past.png" alt="past slash command" height="600">
             </div>
 
-            <p>Additionally, the bot generates two graphs thorugh matplotlib. The first graph displays the total time
+            <p>Additionally, the bot generates two bar graphs by <a class="inline"
+                    href="https://matplotlib.org/stable/tutorials/index.html">matplotlib</a>. The first graph displays
+                the total time
                 played
-                by the summoner
-                during the last week, allowing users to visualize their gaming activity over time. The second graph
+                by the summoner last week, allowing users to visualize their gaming activity over time. The second graph
                 shows
-                the total number of games played by the summoner during last week, providing insights into their gaming
+                the total number of games played by the summoner last week, providing insights into their gaming
                 frequency.</p>
 
             <div class="outer">
@@ -114,28 +114,39 @@
                 <img src="images/games_played_graph.png" alt="graph" height="400">
             </div>
             <p>Lastly, the bot generates a comprehensive weekly report that includes a list of games played by the
-                summoner
-                during the previous week and total time played graph and number of games played graph.</p>
+                summoner previous week and total time played graph and number of games played graph.</p>
         </div>
 
         <h2>Code:</h2>
-        <p class="inline-code">The code consisted of 3 main components,
-        <pre class="inline-code">discord_bot.py</pre>,
-        <pre class="inline-code">riot_requests.py"</pre> and and other classes (including.
+        <p class="inline-code">The code can be divided into 3 components. The first component, <span
+                class="highlight">discord</span>, is responsible for receiving commands and sending responses on
+            Discord. It consists of two files,
+        <pre class="inline-code">discord_bot.py</pre> and
+        <pre class="inline-code">responses.py</pre>.
+        The second component, <span class="highlight">riot request</span>, is responsible for fetching data from Riot
+        API. It comprises of the file
+        <pre class="inline-code">riot_requests.py"</pre>. The third component <span class="highlight">entity</span>
+        includes four files:
         <pre class="inline-code">summoner.py</pre>,
         <pre class="inline-code">team.py</pre>,
-        <pre class="inline-code">match.py</pre>).
+        <pre class="inline-code">match.py</pre>,
+        <pre class="inline-code">weekly_report.py</pre>.
+        <br />
+        clean Architecture
         </p>
         <div>
             <h4>
-                <pre>discord_bot.py</pre>
+                &
+                <pre class="inline-code">requests.py</pre>
             </h4>
 
-            <p>‘discord_bot.py’ handles user requests and sending corresponding respond to user. The discord.py library
-                is used to aid in creating applications that utilize the Discord API. By utilizing
-                ‘client.tree.command’, we can create slash commands that users can use on Discord. Each command invokes
-                a function in ‘responses.py’, which, in turn, calls the corresponding function in ‘riot_requests.py’,
-                that fetch the required data from riot api.</p>
+            <p>
+            <pre class="inline-code">discord_bot.py</pre> handles user requests and sending corresponding respond to
+            user. The <a class="inline" href="https://discordpy.readthedocs.io/en/stable/">discord.py</a> library
+            is used to aid in creating applications that utilize the Discord API. By utilizing
+            ‘client.tree.command’, we can create slash commands that users can use on Discord. Each command invokes
+            a function in ‘responses.py’, which, in turn, calls the corresponding function in ‘riot_requests.py’,
+            that fetch the required data from riot api.</p>
 
             <pre>
     @client.tree.command(name="active")
@@ -154,6 +165,26 @@
         active_game = responses.active(summoner_name)
         await interaction.response.send_message(active_game)
             </pre>
+
+            <p> 'responses.py' calls the corresponding function in 'riot_requests.py', that fetch the required data from
+                riot api.</p>
+            <pre>
+    def active(summoner_name: str) -> str:
+        """
+        Return a string of active game information given summoner_name.
+
+        Args:
+            summoner_name (str): summoner name
+
+        Returns:
+            active_game (str): a string of active game information
+        """
+        summoner = riot_requests.get_summoners_by_name(summoner_name)
+
+        active_game = riot_requests.get_active_games_by_summoner_id(summoner.id)
+
+        return str(active_game)
+            </pre>
         </div>
 
         <div>
@@ -164,6 +195,19 @@
 
         <div>
             <h4>Other classes</h4>
+            <p>
+                The Match class represents an individual game match in League of Legends. It contains attributes such as
+                the match ID, start time, duration, and participating teams. It serves as a data transfer object (DTO)
+                for storing match-related information.
+                The Summoner class represents a League of Legends summoner. It contains attributes such as the summoner
+                ID, name, level, and game statistics. It acts as a DTO for storing summoner-related data.
+                The WeeklyReport class generates a report summarizing the summoner's activity in the previous week. It
+                interacts with the Match and Summoner classes to gather the necessary data and produces visualizations,
+                such as graphs depicting the total time played and total games played.
+                the Team class, which represents a team in a League of Legends match. The Team class is a data transfer
+                object (DTO) used to store information about a team, including its ID, list of participants (players),
+                and the outcome of the team (win or loss).
+            </p>
             <h6>Architecture Diagram:</h6>
             <iframe src="league-statistic-bot-architecture-diagram.html" width="1200" height="700"
                 frameborder="0"></iframe>
@@ -189,23 +233,23 @@
                 application that seamlessly interacts with the evolving Riot API, ensuring a consistent and dependable
                 user experience.</p>
             <pre>
-            @pytest.fixture
-            def mock_get_summoners_by_name_sucess():
-                with open("test/mock_get_summoners_by_name_success.json") as f:
-                    return json.load(f)
-    
-    
-            def test_get_summoners_by_name_success(mock_get_summoners_by_name_sucess):
-                """
-                Test get_summoners_by_name() with a valid summoner name.
-                """
-    
-                summoner_name = "Kid Orpheus"
-                with patch("requests.get") as mock_get:
-                    mock_get.return_value.json.return_value = mock_get_summoners_by_name_sucess
-                    summoner = get_summoners_by_name(summoner_name)
-    
-                assert expected_summoner == summoner
+        @pytest.fixture
+        def mock_get_summoners_by_name_sucess():
+            with open("test/mock_get_summoners_by_name_success.json") as f:
+                return json.load(f)
+
+
+        def test_get_summoners_by_name_success(mock_get_summoners_by_name_sucess):
+            """
+            Test get_summoners_by_name() with a valid summoner name.
+            """
+
+            summoner_name = "Kid Orpheus"
+            with patch("requests.get") as mock_get:
+                mock_get.return_value.json.return_value = mock_get_summoners_by_name_sucess
+                summoner = get_summoners_by_name(summoner_name)
+
+            assert expected_summoner == summoner
             </pre>
             <h3>discord_bot_test</h3>
             <p></p>
@@ -224,6 +268,14 @@
 
         <div>
             <h2>What I've Learned</h2>
+        </div>
+
+        <div>
+            <h2>Hurdles</h2>
+        </div>
+
+        <div>
+            <h2>References</h2>
         </div>
 
         <div>
