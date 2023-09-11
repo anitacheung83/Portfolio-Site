@@ -25,9 +25,9 @@
         <ul class="navbar-s">
             <li class="nav-item-s nav-item-left"><a href="#"><img src="/images/android-chrome-512x512.png" width="30">
                     Project: League Statistic Bot</a></li>
-            <li class="nav-item-s nav-item-right"><a href="#">Contact</a></li>
-            <li class="nav-item-s nav-item-right"><a href="#">Projects</a></li>
-            <li class="nav-item-s nav-item-right"><a href="#">About</a></li>
+            <li class="nav-item-s nav-item-right"><a href="/index.html#contact">Contact</a></li>
+            <li class="nav-item-s nav-item-right"><a href="/index.html#projects">Projects</a></li>
+            <li class="nav-item-s nav-item-right"><a href="/index.html#aboutMe">About</a></li>
             <li class="nav-item-s nav-item-right"><a href="/index.html">Home</a></li>
         </ul>
     </div>
@@ -132,21 +132,28 @@
         <pre class="inline-code">match.py</pre>,
         <pre class="inline-code">weekly_report.py</pre>.
         <br />
-        clean Architecture
+        Clean Architecture
         </p>
         <div>
             <h4>
-                &
+                Discord:
+                <pre class="inline-code">discord_bot.py</pre> &
                 <pre class="inline-code">requests.py</pre>
             </h4>
 
-            <p>
-            <pre class="inline-code">discord_bot.py</pre> handles user requests and sending corresponding respond to
-            user. The <a class="inline" href="https://discordpy.readthedocs.io/en/stable/">discord.py</a> library
-            is used to aid in creating applications that utilize the Discord API. By utilizing
-            ‘client.tree.command’, we can create slash commands that users can use on Discord. Each command invokes
-            a function in ‘responses.py’, which, in turn, calls the corresponding function in ‘riot_requests.py’,
-            that fetch the required data from riot api.</p>
+            <p class="inline-code">
+                The discord session of the code handles user requests and sending corresponding responses to
+                user. In the file
+            <pre class="inline-code">discord_bot.py</pre>, <a class="inline"
+                href="https://discordpy.readthedocs.io/en/stable/">discord.py</a> library
+            is used to aid in creating the application that utilize the Discord API. By utilizing
+            <pre class="inline-code">client.tree.command</pre> decorator from <a class="inline"
+                href="https://discordpy.readthedocs.io/en/stable/">discord.py</a>, we can create
+            slash commands that users can use on Discord. Each command invokes
+            a corresponding function from
+            <pre class="inline-code">responses.py</pre> then uses
+            <pre class="inline-code">discord.Interaction</pre> to send the responses to users (as shown below).
+            </p>
 
             <pre>
     @client.tree.command(name="active")
@@ -167,7 +174,13 @@
             </pre>
 
             <p> 'responses.py' calls the corresponding function in 'riot_requests.py', that fetch the required data from
-                riot api.</p>
+                riot api.
+                which, in turn, calls the corresponding
+                function in ‘riot_requests.py’,
+                that fetch the required data from riot api.
+
+
+            </p>
             <pre>
     def active(summoner_name: str) -> str:
         """
@@ -189,7 +202,8 @@
 
         <div>
             <h4>
-                <pre>riot_requests.py</pre>
+                Riot Request:
+                <pre class="inline-code">riot_requests.py</pre>
             </h4>
         </div>
 
@@ -264,18 +278,29 @@
                 is
                 hosted on my Raspberry Pi, allowing me to run it for free.
             </p>
+            <img src="/images/pironman.jpeg" height="400" />
         </div>
 
-        <div>
+        <!-- <div>
             <h2>What I've Learned</h2>
         </div>
 
         <div>
             <h2>Hurdles</h2>
-        </div>
+        </div> -->
 
         <div>
             <h2>References</h2>
+            <ul>
+                <li>
+                    <a href="
+                    https://www.youtube.com/playlist?list=PLL34mf651faNqwhZEM91zU3c-dcc4dLF0">PyTest Tutorial</a>
+                </li>
+                <li>
+                    <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Uncle Bob:
+                        The Clean Architecture</a>
+                </li>
+            </ul>
         </div>
 
         <div>
