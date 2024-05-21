@@ -1,7 +1,7 @@
 /******************* Element Selector ******************/
 
 body {
-    background-color: #F8F4EC;
+    background-color: #e7e3df;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -95,7 +95,7 @@ table {
 /******************* Nav Bar ***********************/
 .navbar-s {
     list-style-type: none;
-    background-color: #C2B8A3;
+    background-color: #c2baae;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -135,7 +135,7 @@ table {
 /******************* About Me **********************/
 
 .container-aboutMe {
-    background: #C2B8A3;
+    background: #c2baae;
     width: 100%;
     min-height: 80vh;
     flex-direction: row;
@@ -144,8 +144,8 @@ table {
 }
 
 .aboutMe {
-    background: #F8F4EC;
-    border-radius: 1%;
+    background: #e7e3df;
+    border-radius: 10px;
     width: 80%;
     height: auto;
     margin: 10px;
@@ -171,7 +171,7 @@ table {
 }
 
 .projects-container {
-    /* background: #F8F4EC; */
+    /* background: #e7e3df; */
     padding: 12px;
     min-height: 80vh;
     flex-direction: row;
@@ -179,19 +179,19 @@ table {
 }
 
 .projects-info {
-    background: #E6DDC6;
-    border-radius: 1%;
+    background: #DAD6CD;
+    border-radius: 10px;
     height: auto;
     margin: 8vh 0;
     padding: 8.5% 8.5% 4% 8.5%;
 }
 
 .projects-0 {
-    background: #F8F4EC;
+    background: #e7e3df;
 }
 
 .projects-1 {
-    background: #C2B8A3;
+    background: #c2baae;
 }
 
 .projects-p {
@@ -205,7 +205,6 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-
 }
 
 .skills h3 {
@@ -218,9 +217,10 @@ table {
 }
 
 .skills .row {
-    background: #E6DDC6;
-    border-radius: 1%;
+    background: #cec8be;
+    border-radius: 10px;
     padding: 1rem 4rem;
+    margin: 1rem 0;
 }
 
 /******************* Experiences ********************/
@@ -232,8 +232,8 @@ table {
 }
 
 .experience .row {
-    background: #C2B8A3;
-    border-radius: 1%;
+    background: #c2baae;
+    border-radius: 10px;
     padding: 4rem;
     margin: 4rem 0;
 }
@@ -255,8 +255,8 @@ table {
 }
 
 .education .col-sm-6 {
-    background-color: #C2B8A3;
-    border-radius: 1%;
+    background-color: #c2baae;
+    border-radius: 10px;
     padding: 2rem;
     margin-bottom: 4rem;
 }
